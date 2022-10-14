@@ -1,0 +1,6 @@
+version=4
+opts=\
+dversionmangle=auto,\
+filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-parse-filepath-$1.tar.gz/ \
+ https://github.com/jonschlinkert/parse-filepath/tags .*/archive/v?([\d\.]+).tar.gz
+

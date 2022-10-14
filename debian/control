@@ -1,0 +1,30 @@
+Source: node-parse-filepath
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Paolo Greppi <paolo.greppi@libpf.com>
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , mocha <!nocheck>
+ , node-map-cache <!nocheck>
+ , node-path-root <!nocheck>
+ , node-should <!nocheck>
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/js-team/node-parse-filepath
+Vcs-Git: https://salsa.debian.org/js-team/node-parse-filepath.git
+Homepage: https://github.com/jonschlinkert/parse-filepath
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-parse-filepath
+Architecture: all
+Depends: ${misc:Depends}
+ , node-map-cache
+ , node-path-is-absolute
+ , node-path-root
+Description: Parses a filepath into an object
+ Node.js module that provides a polyfill for the native path.parse,
+ that parses a filepath into an object with absolute filepath,
+ dirname, basename, extname etc.
+ .
+ Node.js is an event-based server-side JavaScript engine.

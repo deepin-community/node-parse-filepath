@@ -1,0 +1,32 @@
+node-parse-filepath (1.0.2-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Paolo Greppi ]
+  * Update Vcs fields for migration to https://salsa.debian.org/
+
+  [ Debian Janitor ]
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Modernize debian/watch
+  * Use dh-sequence-nodejs auto test & install
+  * New upstream version 1.0.2
+  * Update copyright
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 23 Dec 2020 17:51:16 +0100
+
+node-parse-filepath (1.0.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #847911)
+
+ -- Paolo Greppi <paolo.greppi@libpf.com>  Tue, 13 Dec 2016 16:24:15 +0000
