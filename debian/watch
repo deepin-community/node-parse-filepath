@@ -1,6 +1,11 @@
 version=4
 opts=\
 dversionmangle=auto,\
-filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-parse-filepath-$1.tar.gz/ \
- https://github.com/jonschlinkert/parse-filepath/tags .*/archive/v?([\d\.]+).tar.gz
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-parse-filepath-$1/ \
+ https://github.com/jonschlinkert/parse-filepath/tags .*/archive/.*/v?([\d\.]+).tar.gz group
 
+
+# It is not recommended use npmregistry. Please investigate more.
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,component=types-parse-filepath,ctype=nodejs,pgpmode=none,filenamemangle=s/^.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-types-parse-filepath-$1/" \
+ https://registry.npmjs.org/@types/parse-filepath https://registry.npmjs.org/@types/parse-filepath/-/parse-filepath-([\d\.]+)@ARCHIVE_EXT@ group

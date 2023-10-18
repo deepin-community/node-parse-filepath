@@ -9,7 +9,7 @@ Build-Depends: debhelper-compat (= 13)
  , node-map-cache <!nocheck>
  , node-path-root <!nocheck>
  , node-should <!nocheck>
-Standards-Version: 4.5.1
+Standards-Version: 4.6.0
 Vcs-Browser: https://salsa.debian.org/js-team/node-parse-filepath
 Vcs-Git: https://salsa.debian.org/js-team/node-parse-filepath.git
 Homepage: https://github.com/jonschlinkert/parse-filepath
@@ -22,6 +22,8 @@ Depends: ${misc:Depends}
  , node-map-cache
  , node-path-is-absolute
  , node-path-root
+Provides: ${nodejs:Provides}
+Multi-Arch: foreign
 Description: Parses a filepath into an object
  Node.js module that provides a polyfill for the native path.parse,
  that parses a filepath into an object with absolute filepath,
