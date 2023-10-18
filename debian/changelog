@@ -1,3 +1,20 @@
+node-parse-filepath (1.0.2+~1.0.0-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + node-parse-filepath: Add Multi-Arch: foreign.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Thu, 08 Dec 2022 00:05:42 +0000
+
+node-parse-filepath (1.0.2+~1.0.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Fix GitHub tags regex
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix filenamemangle
+  * Embed typescript definitions and repack
+
+ -- Yadd <yadd@debian.org>  Fri, 26 Nov 2021 09:19:26 +0100
+
 node-parse-filepath (1.0.2-1) unstable; urgency=medium
 
   * Team upload

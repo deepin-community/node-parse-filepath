@@ -2,6 +2,7 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: parse-filepath
 Upstream-Contact: https://github.com/jonschlinkert/parse-filepath/issues
 Source: https://github.com/jonschlinkert/parse-filepath
+ https://registry.npmjs.org/@types/parse-filepath
 
 Files: *
 Copyright: 2014-2015 Jon Schlinkert (https://github.com/jonschlinkert)
@@ -9,8 +10,12 @@ License: Expat
 
 Files: debian/*
 Copyright: 2016 Paolo Greppi <paolo.greppi@libpf.com>
- 2020 Xavier Guimard <yadd@debian.org>
+ 2020 Yadd <yadd@debian.org>
 License: GPL-3.0+
+
+Files: types-*/*
+Copyright: Microsoft Corporation
+License: Expat
 
 License: Expat
  Permission is hereby granted, free of charge, to any person
